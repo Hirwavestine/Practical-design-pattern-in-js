@@ -1,4 +1,7 @@
 var task = Object.create(Object.prototype);
-task.title = "task creation again";
+task.title = "task creation again using a function";
 task.description = "learn how to create task";
-console.log(task.title);
+task.toString = function() {
+  return this.title;
+};
+console.log(task.toString());
