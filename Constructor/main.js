@@ -1,4 +1,4 @@
-var Task = require("./task");
+var Task = require("../task");
 
 var task1 = new Task("create a demo for constructor");
 var task2 = new Task("create a demo for modules");
