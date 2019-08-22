@@ -1,3 +1,5 @@
+//Prototype:An encapsulation of properties that an object links to
+
 var Task = function(name) {
   this.name = name;
   this.completed = false;
@@ -9,6 +11,14 @@ var Task = function(name) {
   this.save = function() {
     console.log("saving Task: " + this.name);
   };
+};
+//className.prototype.methodName=function(arguments{})
+Task.prototype.complete = function(arguments) {
+  console.log("completing task: " + this.name);
+  this.completed = true;
+};
+Task.prototype.save = function() {
+  console.log("saving Task: " + this.name);
 };
 var task1 = new Task("create a demo for constructor");
 var task2 = new Task("create a demo for modules");
