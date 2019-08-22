@@ -1,5 +1,9 @@
-//creating object in js
+var task = {
+  title: "task creation again using a function",
+  description: "learn how to create task"
+};
 
-var obj = {};
-var nextObj = Object.create(Object.prototype);
-var lastObj = new Object();
+task.toString = function() {
+  return this.title + " " + this.description;
+};
+console.log(task.toString());
