@@ -3,15 +3,8 @@
 var Task = function(name) {
   this.name = name;
   this.completed = false;
-
-  this.complete = function() {
-    console.log("completing task: " + this.name);
-    this.completed = true;
-  };
-  this.save = function() {
-    console.log("saving Task: " + this.name);
-  };
 };
+
 //className.prototype.methodName=function(arguments{})
 Task.prototype.complete = function(arguments) {
   console.log("completing task: " + this.name);
