@@ -1,6 +1,4 @@
-//Assigning Keys and values
-
-var obj = {};
-var val = "value";
-obj[val] = "new value";
-console.log(obj[val]); //new value
+var task = {};
+task.title = "task creation";
+task.description = "learn how to create task";
+console.log(task.title);
