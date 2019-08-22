@@ -1,3 +1,7 @@
+/* 
+we can use Object.create() for inheritance 
+*/
+
 var task = {
   title: "task creation again using a function",
   description: "learn how to create task"
@@ -10,8 +14,14 @@ Object.defineProperty(task, "toString", {
   enumerable: false,
   configurable: false
 });
-Object.defineProperty(task, "toSring", {
-  enumerable: true
+
+var urgentTask = Object.create(task);
+Object.defineProperty(urgentTask, "toString", {
+  value: function() {
+    return this.title + " is urgent";
+  },
+  writable: false,
+  enumerable: false,
+  configurable: false
 });
-task.toString = "hi";
-console.log(Object.keys(task));
+console.log(urgentTask.toString());
