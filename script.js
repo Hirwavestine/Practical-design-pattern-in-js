@@ -1,6 +1,6 @@
-//creating object in js
+//Assigning Keys and values
 
 var obj = {};
-//use this in inheritance
-var nextObj = Object.create(Object.prototype);
-var lastObj = new Object();
+//use Dot notation
+obj.param = "new value";
+console.log(obj.param); //new value
